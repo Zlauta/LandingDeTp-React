@@ -1,15 +1,15 @@
-//  import React from "react";
-//  import Footer from "./components/Footer"; 
-//  function App() {
-//    return (
-//      <div className="App">
-//        <header className="App-header">
-//          <h1>Mi Aplicación de React</h1>
-//        </header>
-//        <main></main>
-//        <Footer />
-//      </div>
-//    );
-//  }
+ import React from "react";
+ import Footer from "./components/Footer"; 
+ import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from "./components/Header";
+ function App() {
+   return (
+     <div className="App">
+       <Header/>
+       <main></main>
+       <Footer />
+     </div>
+   );
+ }
 
-// export default App;
+export default App;

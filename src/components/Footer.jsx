@@ -39,7 +39,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Todos los derechos reservados.
           </p>
         </div>
-          <div className="d-flex">
+          <div className="d-flex p-3">
             {members.map((member, index) => (
               <div key={index} className="d-flex me-1">
                 <img
