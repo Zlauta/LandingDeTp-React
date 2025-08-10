@@ -1,0 +1,109 @@
+body {
+  background-image: url("https://i.pinimg.com/736x/bc/45/ec/bc45ec56b1506dda7b4b9a09bd5dfe7d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.container-main {
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #7cbcff40;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 600px;
+  font-size: 25px;
+  color: #000000;
+}
+
+.card-title {
+  text-align: center;
+  width: 600px;
+}
+
+.colores-creados-card {
+  height: 600px;
+  overflow-y: auto;
+  width: 1000px;
+  background-color: #ffffff31;
+  color: #000000;
+}
+
+.selector-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.eleccion-color {
+  width: 50px;
+  height: 50px;
+  border-color: black;
+  cursor: pointer;
+  border-radius: px;
+}
+
+.btn-add {
+  background-color: #ffb134;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-add:hover {
+  background-color: #d29025;
+}
+
+.listado-colores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.color-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+}
+
+.cambio-color{
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.color-text {
+  margin: 0 0 10px 0;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
