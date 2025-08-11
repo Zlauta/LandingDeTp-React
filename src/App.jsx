@@ -1,29 +1,16 @@
-<<<<<<< HEAD
-
 import Footer from "./components/Footer";
-import ListadoTarea from "./components/ListadoTarea";
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Mi Aplicación de React</h1>
-      </header>
-      <ListadoTarea></ListadoTarea>
-      <Footer />
-=======
-
-import React from "react";
-import Tarjeta from "./components/ListadoColores";
 import ListadoDeColores from "./components/ListadoColores";
+import ListadoTareas from "./components/ListadoTarea";
 
-function App() {
+const App = () => {
   return (
-    <div>
-         <ListadoDeColores />
->>>>>>> ff675ad0d60ddb55c5ab1bfbe57df7106d92ef1f
-
-    </div>
+    <>
+      <Headers></Headers>
+      <ListadoTareas></ListadoTareas>
+      <ListadoDeColores></ListadoDeColores>
+      <Footer></Footer>
+    </>
   );
-}
+};
 
 export default App;
