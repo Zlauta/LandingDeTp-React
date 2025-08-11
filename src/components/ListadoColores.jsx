@@ -14,19 +14,20 @@ export default function ListadoDeColores() {
     console.log('Colores cargados:', coloresGuardados);
   }, []);
 
-  useEffect(() => {
-    console.log('Intentando guardar datos en localStorage:', listaDeColores);
-    localStorage.setItem('colores', JSON.stringify(listaDeColores));
-  }, [listaDeColores]);
-
   const agregarColor = () => {
     if (!listaDeColores.includes(colorSeleccionado)) {
-      setListaDeColores([...listaDeColores, colorSeleccionado]);
+      const nuevosColores = [...listaDeColores,colorSeleccionado]
+      setListaDeColores(nuevosColores);
+    localStorage.setItem("colores",JSON.stringify(nuevosColores))
     }
+   
+
   };
 
   const borrarColor = (colorAEliminar) => {
-    setListaDeColores(listaDeColores.filter(c => c !== colorAEliminar));
+    const nuevosColores = listaDeColores.filter(color => color !== colorAEliminar)
+    setListaDeColores(nuevosColores);
+     localStorage.setItem("colores",JSON.stringify(nuevosColores))
   };
 
 
