@@ -1,3 +1,4 @@
+
 import Footer from "./components/Footer";
 import ListadoTarea from "./components/ListadoTarea";
 function App() {
@@ -8,6 +9,16 @@ function App() {
       </header>
       <ListadoTarea></ListadoTarea>
       <Footer />
+
+import React from "react";
+import Tarjeta from "./components/ListadoColores";
+import ListadoDeColores from "./components/ListadoColores";
+
+function App() {
+  return (
+    <div>
+         <ListadoDeColores />
+
     </div>
   );
 }
