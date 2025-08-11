@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 import Footer from "./components/Footer";
 import ListadoTarea from "./components/ListadoTarea";
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <ListadoTarea></ListadoTarea>
       <Footer />
 =======
+
 import React from "react";
 import Tarjeta from "./components/ListadoColores";
 import ListadoDeColores from "./components/ListadoColores";
@@ -19,6 +21,7 @@ function App() {
     <div>
          <ListadoDeColores />
 >>>>>>> ff675ad0d60ddb55c5ab1bfbe57df7106d92ef1f
+
     </div>
   );
 }
