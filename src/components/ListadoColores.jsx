@@ -1,29 +1,36 @@
-import React, { useState, useEffect } from "react";
-import "./ListadoDeColores.css";
-import ColorCard from "./ColorCard";
+import React, { useState, useEffect } from 'react';
+import './ListadoDeColores.css';
+import ColorCard from './ColorCard';
 
 export default function ListadoDeColores() {
-  const [colorSeleccionado, setColorSeleccionado] = useState("#000000");
+  const [colorSeleccionado, setColorSeleccionado] = useState('#000000');
   const [listaDeColores, setListaDeColores] = useState([]);
 
+ 
   useEffect(() => {
-    const coloresGuardados = JSON.parse(localStorage.getItem("colores")) || [];
+    console.log('Intentando cargar datos de localStorage...');
+    const coloresGuardados = JSON.parse(localStorage.getItem('colores')) || [];
     setListaDeColores(coloresGuardados);
+    console.log('Colores cargados:', coloresGuardados);
   }, []);
-
-  useEffect(() => {
-    localStorage.setItem("colores", JSON.stringify(listaDeColores));
-  }, [listaDeColores]);
 
   const agregarColor = () => {
     if (!listaDeColores.includes(colorSeleccionado)) {
-      setListaDeColores([...listaDeColores, colorSeleccionado]);
+      const nuevosColores = [...listaDeColores,colorSeleccionado]
+      setListaDeColores(nuevosColores);
+    localStorage.setItem("colores",JSON.stringify(nuevosColores))
     }
+   
+
   };
 
   const borrarColor = (colorAEliminar) => {
-    setListaDeColores(listaDeColores.filter((c) => c !== colorAEliminar));
+    const nuevosColores = listaDeColores.filter(color => color !== colorAEliminar)
+    setListaDeColores(nuevosColores);
+     localStorage.setItem("colores",JSON.stringify(nuevosColores))
   };
+
+
 
   return (
     <div className="container-main">
